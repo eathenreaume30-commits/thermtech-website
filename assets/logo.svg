@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 272 64" role="img" aria-label="ThermTech Heating and Cooling">
+  <defs>
+    <linearGradient id="ttEmber" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FF8A3D"/>
+      <stop offset="1" stop-color="#E8431F"/>
+    </linearGradient>
+    <linearGradient id="ttFrost" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#1E8FCB"/>
+      <stop offset="1" stop-color="#54CFE8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Thermostat dial mark: cool half + warm half -->
+  <g transform="translate(32 32)">
+    <circle r="26" fill="#0E1B2E"/>
+    <!-- frost arc (cooling) -->
+    <path d="M0 -18 A18 18 0 0 0 0 18" fill="none" stroke="url(#ttFrost)" stroke-width="6.5" stroke-linecap="round"/>
+    <!-- ember arc (heating) -->
+    <path d="M0 -18 A18 18 0 0 1 0 18" fill="none" stroke="url(#ttEmber)" stroke-width="6.5" stroke-linecap="round"/>
+    <!-- center indicator -->
+    <circle r="4.4" fill="#F5F7FA"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g font-family="'Bricolage Grotesque','Segoe UI',system-ui,sans-serif" font-weight="800" font-size="29" letter-spacing="-0.5">
+    <text x="70" y="36" fill="#0E1B2E">Therm</text>
+    <text x="159" y="36" fill="#1E8FCB">Tech</text>
+  </g>
+  <text x="71" y="52" font-family="'Space Grotesk','Segoe UI',system-ui,sans-serif" font-weight="600" font-size="9.5" letter-spacing="2.4" fill="#5A6B7B">HEATING / COOLING / AIR</text>
+</svg>
