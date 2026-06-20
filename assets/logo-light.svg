@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 272 64" role="img" aria-label="ThermTech Heating and Cooling">
+  <defs>
+    <linearGradient id="ttEmberL" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FF8A3D"/>
+      <stop offset="1" stop-color="#E8431F"/>
+    </linearGradient>
+    <linearGradient id="ttFrostL" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#1E8FCB"/>
+      <stop offset="1" stop-color="#54CFE8"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(32 32)">
+    <circle r="26" fill="#16273D"/>
+    <path d="M0 -18 A18 18 0 0 0 0 18" fill="none" stroke="url(#ttFrostL)" stroke-width="6.5" stroke-linecap="round"/>
+    <path d="M0 -18 A18 18 0 0 1 0 18" fill="none" stroke="url(#ttEmberL)" stroke-width="6.5" stroke-linecap="round"/>
+    <circle r="4.4" fill="#F5F7FA"/>
+  </g>
+  <g font-family="'Bricolage Grotesque','Segoe UI',system-ui,sans-serif" font-weight="800" font-size="29" letter-spacing="-0.5">
+    <text x="70" y="36" fill="#FFFFFF">Therm</text>
+    <text x="159" y="36" fill="#54CFE8">Tech</text>
+  </g>
+  <text x="71" y="52" font-family="'Space Grotesk','Segoe UI',system-ui,sans-serif" font-weight="600" font-size="9.5" letter-spacing="2.4" fill="#9DB0C4">HEATING / COOLING / AIR</text>
+</svg>
