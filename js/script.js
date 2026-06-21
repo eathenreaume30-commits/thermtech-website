@@ -109,6 +109,7 @@
   function show(kind, text) { msg.className = 'form-msg ' + kind; msg.textContent = text; }
   if (form) {
     form.addEventListener('submit', function (ev) {
+      // basic validation
       var name = form.name.value.trim();
       var phone = form.phone.value.trim();
       var email = form.email.value.trim();
@@ -118,6 +119,7 @@
         return;
       }
       var action = form.getAttribute('action') || '';
+      // If Formspree isn't configured yet, fall back to a prefilled email.
       if (action.indexOf('your-form-id') !== -1) {
         ev.preventDefault();
         var body = encodeURIComponent(
@@ -128,6 +130,7 @@
           encodeURIComponent('Quote request from ' + name) + '&body=' + body;
         show('ok', 'Opening your email app to send the request — or call us at 416-835-1289.');
       }
+      // Otherwise the form posts to Formspree normally.
     });
   }
 
