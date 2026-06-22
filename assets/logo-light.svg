@@ -1,23 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 272 64" role="img" aria-label="ThermTech Heating and Cooling">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 64" role="img" aria-label="Therm Tech Heating and Cooling">
   <defs>
-    <linearGradient id="ttEmberL" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#FF8A3D"/>
-      <stop offset="1" stop-color="#E8431F"/>
+    <linearGradient id="ttRedL" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E8242B"/><stop offset="1" stop-color="#CE0000"/>
     </linearGradient>
-    <linearGradient id="ttFrostL" x1="0" y1="1" x2="1" y2="0">
-      <stop offset="0" stop-color="#1E8FCB"/>
-      <stop offset="1" stop-color="#54CFE8"/>
+    <linearGradient id="ttBlueL" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#5A9BD8"/><stop offset="1" stop-color="#2B6CB0"/>
     </linearGradient>
   </defs>
-  <g transform="translate(32 32)">
-    <circle r="26" fill="#16273D"/>
-    <path d="M0 -18 A18 18 0 0 0 0 18" fill="none" stroke="url(#ttFrostL)" stroke-width="6.5" stroke-linecap="round"/>
-    <path d="M0 -18 A18 18 0 0 1 0 18" fill="none" stroke="url(#ttEmberL)" stroke-width="6.5" stroke-linecap="round"/>
-    <circle r="4.4" fill="#F5F7FA"/>
+  <g transform="translate(32,32)">
+    <circle r="28" fill="#fff" fill-opacity="0.08"/>
+    <circle r="28" fill="none" stroke="#fff" stroke-opacity="0.18" stroke-width="1"/>
+    <path d="M0,-22 A22,22 0 0,1 0,22 A11,11 0 0,1 0,0 A11,11 0 0,0 0,-22 Z" fill="url(#ttRedL)"/>
+    <path d="M0,22 A22,22 0 0,1 0,-22 A11,11 0 0,1 0,0 A11,11 0 0,0 0,22 Z" fill="url(#ttBlueL)"/>
+    <circle cx="0" cy="-11" r="4.2" fill="#fff"/>
+    <circle cx="0" cy="11" r="4.2" fill="#021D38"/>
   </g>
-  <g font-family="'Bricolage Grotesque','Segoe UI',system-ui,sans-serif" font-weight="800" font-size="29" letter-spacing="-0.5">
-    <text x="70" y="36" fill="#FFFFFF">Therm</text>
-    <text x="159" y="36" fill="#54CFE8">Tech</text>
-  </g>
-  <text x="71" y="52" font-family="'Space Grotesk','Segoe UI',system-ui,sans-serif" font-weight="600" font-size="9.5" letter-spacing="2.4" fill="#9DB0C4">HEATING / COOLING / AIR</text>
+  <text x="72" y="34" font-family="'Bricolage Grotesque','Segoe UI',sans-serif" font-weight="800" font-size="29" letter-spacing="-1">
+    <tspan fill="#FF5A5F">Therm</tspan><tspan fill="#fff"> Tech</tspan>
+  </text>
+  <text x="74" y="50" font-family="'Space Grotesk','Inter',sans-serif" font-weight="600" font-size="9.5" letter-spacing="5" fill="#9DBFDD">HEATING &amp; COOLING</text>
 </svg>
